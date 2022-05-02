@@ -9,9 +9,11 @@ class Controller
     public static function enlacesPaginasController()
     {
         if (isset($_GET["action"])){
-            $enlacesController = $_GET["action"];}
+            $enlacesController = $_GET["action"];
+			}
         else{
-            $enlacesController = "index";}
+            $enlacesController = "index";
+			}
 
         $respuesta = enlacesPaginas::enlacesPaginasModel($enlacesController);
 

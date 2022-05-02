@@ -118,7 +118,7 @@ public class redes {
 		mater = mater.substring(0, 1).toUpperCase() + mater.substring(1);
 		char validador = Genero.charAt(0);
 		
-		if(Nombres.indexOf(" ") == -1) {
+		if(Nombres.indexOf(' ') == -1) {
 			for (int a = 0; a<Nombres.length(); ++a) {
 				if(Character.isLetter(Nombres.charAt(a))== false) {
 					return "Por favor revise el formato en que ingresó el apellido nombre";
@@ -136,7 +136,7 @@ public class redes {
 				}
 
 		}
-		if (Nombres.indexOf(" ") !=-1) {
+		if (Nombres.indexOf(' ') !=-1) {
 			String[] nombresfinal = Nomb.split(" ");
 			nombresfinal[0] = nombresfinal[0].substring(0, 1).toUpperCase() + nombresfinal[0].substring(1);
 			
