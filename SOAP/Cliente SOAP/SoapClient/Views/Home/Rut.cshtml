@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Validar Digito Verificador";
+}
+
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-11 col-ms-11 col-lg-4 bg-white rounded border shadow-sm mx-1 mb-3 mb-lg-0">
+            <h3 class="font-weight-bold my-4">Validar Digito Verificador</h3>
+            <hr>
+            <p class="text-justify my-2 py-3">
+                Servicio que recibe un la parete entera de un RUT con su digito verificador y delvuelve como respuesta si el digito entregado es o no correcto.
+            </p>
+        </div>
+        <div class="col-11 col-ms-11 col-lg-7 bg-white rounded border shadow-sm mx-1">
+            <div class="row d-flex justify-content-center pt-4">
+                <div class="col-8">
+                    <form action="/Home/verRut" method="POST">
+                        <div class="form-group">
+                            <label for="rut">Ingresar un Registro Único Tributario (RUT):</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="20034561-4" name="rut">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-success">Verificar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>

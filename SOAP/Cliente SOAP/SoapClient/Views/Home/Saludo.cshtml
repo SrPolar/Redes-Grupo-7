@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Split Nombre Propio";
+}
+
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-11 col-ms-11 col-lg-4 bg-white rounded border shadow-sm mx-1 mb-3 mb-lg-0">
+            <h3 class="font-weight-bold my-4">Split Nombre Propio</h3>
+            <hr>
+            <p class="text-justify my-2 py-3">
+                Metodo que recibe un nombre completo (orden Nombres -  Apellidos) y los devuelve en estructura jerarquica.
+            </p>
+        </div>
+        <div class="col-11 col-ms-11 col-lg-7 bg-white rounded border shadow-sm mx-1">
+            <div class="row d-flex justify-content-center pt-4">
+                <div class="col-10">
+                    <form action="/Home/verSaludo" method="POST">
+                        <div class="form-group">
+                            <label for="">Nombre(s)</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="Ingresa tus nombres" name="nombres">
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="">Apellido Paterno</label>
+                                    <input type="text" class="form-control form-control-sm" placeholder="Ingresa tu apellido paterno" name="ap">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="">Apellido Materno</label>
+                                    <input type="text" class="form-control form-control-sm" placeholder="Ingresa tu apellido paterno" name="am">
+                                </div>
+                            </div>
+                        </div>
+
+                        <label>Sexo</label>
+                        <br>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="sexo" value="H" class="form-check-input mr-2">
+                            <label class="form-check-label">Masculino</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="sexo" value="M" class="form-check-input mr-2">
+                            <label class="form-check-label">Femenino</label>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-success" type="submit">Separar</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
