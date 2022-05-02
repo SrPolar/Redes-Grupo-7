@@ -1,5 +1,5 @@
 # Redes-Grupo-7
-# Trabajo de redes y comunicación de datos webservices
+# Trabajo de Redes y Comunicación de Datos WebServices
 # Jose Hervas
 # Virla Parra
 # Lukas Poffal
